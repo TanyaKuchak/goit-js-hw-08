@@ -1,4 +1,3 @@
-
 import throttle from 'lodash.throttle';
 
 const formRef = document.querySelector('.feedback-form');
@@ -50,6 +49,5 @@ const handleSubmit = event => {
     console.log({ email: email.value, message: message.value });
     event.currentTarget.reset();
     localStorage.removeItem(LOCAL_STORAGE_KEY);
-    lo
 }
 formRef.addEventListener('submit', handleSubmit);
